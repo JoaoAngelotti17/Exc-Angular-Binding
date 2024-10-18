@@ -1,0 +1,31 @@
+<div class="container">
+    <h2>Calcular Média</h2>
+  
+    <div>
+      <label for="ac1">Nota AC1:</label>
+      <input type="number" [(ngModel)]="ac1" id="ac1">
+    </div>
+  
+    <div>
+      <label for="ac2">Nota AC2:</label>
+      <input type="number" [(ngModel)]="ac2" id="ac2">
+    </div>
+  
+    <div>
+      <label for="ag">Nota AG:</label>
+      <input type="number" [(ngModel)]="ag" id="ag">
+    </div>
+  
+    <div>
+      <label for="af">Nota AF:</label>
+      <input type="number" [(ngModel)]="af" id="af">
+    </div>
+  
+    <button (click)="calcularMedia()">Calcular</button>
+  
+    <div *ngIf="mediaFinal > 0">
+      <p>Média Final: {{ mediaFinal.toFixed(2) }}</p>
+      <p [ngClass]="{'resultado-aprovado': resultado === 'Aprovado', 'resultado-reprovado': resultado === 'Reprovado'}">{{ resultado }}</p>
+    </div>
+  </div>
+  

@@ -1,0 +1,80 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ocupa a altura total da tela */
+  margin: 0;
+  background-color: #eaeaea; /* Cor de fundo para a página */
+}
+
+.container {
+  background-color: #f4f4f4; /* Cor de fundo */
+  padding: 20px;
+  border-radius: 10px; /* Cantos arredondados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  max-width: 400px; /* Largura máxima */
+  margin: 0 auto; /* Centraliza o container */
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.container h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.container div {
+  margin-bottom: 15px; /* Espaçamento entre os campos */
+}
+
+.container label {
+  display: block; /* Exibe o label como bloco */
+  margin-bottom: 5px; /* Espaçamento entre o label e o input */
+  color: #333;
+  font-weight: bold;
+}
+
+.container input[type="number"],
+.container input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.container select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.container button {
+  background-color: #007bff; /* Cor de fundo do botão */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+}
+
+.container button:hover {
+  background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+.container input[readonly] {
+  background-color: #f0f0f0; /* Cor de fundo para o campo de resultado */
+  color: #333;
+  cursor: not-allowed; /* Cursor indicando que não pode ser editado */
+}
